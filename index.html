@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Discover Your Next Read</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 BookNest</h1>
+        <p>Discover your next favourite book.</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#genres">Genres</a>
+            <a href="#books">Books</a>
+            <a href="#moods">By Mood</a>
+            <a href="#reading">Reading Corner</a>
+        </nav>
+        </header>
+
+    <main id="home">
+        <section class="search-section">
+            <h2>Find your next adventure</h2>
+            <p>Explore stories, discover authors and find books you'll love.</p>
+            <input type="search" id="search"
+                placeholder="Search by book or author...">
+            <button type="button" id="searchButton">Search</button>
+        </section>
+
+        <section class="daily-book">
+            <h2>📖 Book of the Day</h2>
+            <h3>The Little Prince</h3>
+            <p>By Antoine de Saint-Exupéry</p>
+            <p>A classic tale about friendship, imagination and seeing the world differently.</p>
+            <button type="button">Discover this book</button>
+        </section>
+
+        <section id="genres" class="genres">
+            <h2>Explore Genres</h2>
+            <button type="button" data-genre="All">All</button>
+            <button type="button" data-genre="Fantasy">Fantasy</button>
+            <button type="button" data-genre="Mystery">Mystery</button>
+            <button type="button" data-genre="Romance">Romance</button>
+            <button type="button" data-genre="Adventure">Adventure</button>
+            <button type="button" data-genre="Thriller">Thriller</button>
+            <button type="button" data-genre="Scifi">science fiction</button>
+            <button type="button" data-genre="Horror">Horror</button>
+
+
+
+        </section>
+
+        <section id="books" class="book-section">
+            <h2>Popular Books</h2>
+            <div class="book-container">
+                <article class="book-card" data-genre="Fantasy">
+                    <div class="book-cover">📕</div>
+                    <h3>Harry Potter</h3>
+                    <p>J.K. Rowling</p>
+                    <span>Fantasy</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                <article class="book-card" data-genre="Fantasy">
+                    <div class="book-cover">📙</div>
+                    <h3>The Little Prince</h3>
+                    <p>Antoine de Saint-Exupéry</p>
+                    <span>Fantasy</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                <article class="book-card" data-genre="Fantasy">
+                    <div class="book-cover">📕</div>
+                    <h3>Alice in Wonderland</h3>
+                    <p>Lewis Carroll</p>
+                    <span>Fantasy</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+
+                <article class="book-card" data-genre="Fantasy">
+                    <div class="book-cover">📗</div>
+                    <h3>The Hobbit</h3>
+                    <p>J.R.R. Tolkien</p>
+                    <span>Fantasy</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+
+                <article class="book-card" data-genre="Fantasy">
+                    <div class="book-cover">📗</div>
+                    <h3>Bodies of Magic</h3>
+                    <p>Freya Marske</p>
+                    <span>Fantasy</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                article class="book-card" data-genre="Fantasy">
+                    <div class="book-cover">📗</div>
+                    <h3>A song of Ice and Fire</h3>
+                    <p>George RR Martin</p>
+                    <span>Fantasy</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                 <article class="book-card" data-genre="Mystery">
+                    <div class="book-cover">📘</div>
+                    <h3>Sherlock Holmes</h3>
+                    <p>Arthur Conan Doyle</p>
+                    <span>Mystery</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                <article class="book-card" data-genre="Mystery">
+                    <div class="book-cover">📙</div>
+                    <h3>And Then There Were None</h3>
+                    <p>Agatha Christie</p>
+                    <span>Mystery</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+
+                <article class="book-card" data-genre="Mystery">
+                    <div class="book-cover">📙</div>
+                    <h3>what Maya say</h3>
+                    <p>Shabnam Minwalla</p>
+                    <span>Mystery</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+                <article class="book-card" data-genre="Thriller">
+<div class="book-cover">📕</div>
+                    <h3>The Housemaid</h3>
+                    <p>Freida McFadden</p>
+                    <span>Thriller</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                <article class="book-card" data-genre="Thriller">
+                    <div class="book-cover">📘</div>
+                    <h3>The Silent Patient</h3>
+                    <p>Alex Michaelides</p>
+                    <span>Thriller</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                <article class="book-card" data-genre="Thriller">
+                    <div class="book-cover">📘</div>
+                    <h3>Verity</h3>
+                    <p>Collen Hoover</p>
+                    <span>Mystery</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                <article class="book-card" data-genre="Thriller">
+                    <div class="book-cover">📘</div>
+                    <h3>A Good Girl's Guide To Murder</h3>
+                    <p>Holly Jackson</p>
+                    <span>Mystery</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                <article class="book-card" data-genre="Romance">
+                    <div class="book-cover">📗</div>
+                    <h3>The Fault in Our Stars</h3>
+                    <p>John Green</p>
+                    <span>Romance</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                <article class="book-card" data-genre="Romance">
+                    <div class="book-cover">📙</div>
+                    <h3>Pride and Prejudice</h3>
+                    <p>Jane Austen</p>
+                    <span>Romance</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+
+                <article class="book-card" data-genre="Romance">
+                    <div class="book-cover">📙</div>
+                    <h3>It Ends With Us</h3>
+                    <p>Collen Hoover</p>
+                    <span>Romance</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                
+                <article class="book-card" data-genre="Adventure">
+                    <div class="book-cover">📗</div>
+                    <h3>Tom Sawyer</h3>
+                    <p>Mark Twain</p>
+                    <span>Adventure</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                <article class="book-card" data-genre="Romance">
+                    <div class="book-cover">📙</div>
+                    <h3>Pride and Prejudice</h3>
+                    <p>Jane Austen</p>
+                    <span>Romance</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+                <article class="book-card" data-genre="Romance">
+                    <div class="book-cover">📙</div>
+                    <h3>It Ends With Us</h3>
+                    <p>Collen Hoveer</p>
+                    <span>Romance</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+
+                <article class="book-card" data-genre="Romance">
+                    <div class="book-cover">📙</div>
+                    <h3>The Duke and I</h3>
+                    <p>Julia Quinn</p>
+                    <span>Romance</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+
+
+                
+
+                <article class="book-card" data-genre="Mystery">
+                    <div class="book-cover">📘</div>
+                    <h3>The Thursday Murder Club</h3>
+                    <p>Richard Osman</p>
+                    <span>Mystery</span>
+                    <button type="button" class="favorite">♡ Favourite</button>
+                </article>
+              </div>
+                
+</section>
+
+        <section id="moods" class="moods">
+            <h2>Browse by Mood</h2>
+            <div class="mood-container">
+                <article>
+                    <h3>🌧️ Rainy Day Reads</h3>
+                    <p>Stories for a quiet, cosy day.</p>
+                </article>
+                <article>
+                    <h3>🔍 Mystery Lovers</h3>
+                    <p>Uncover secrets and solve puzzles.</p>
+                </article>
+                <article>
+                    <h3>✨ Magical Adventures</h3>
+                    <p>Explore imaginative worlds.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="reading" class="reading">
+            <h2>📚 Reading Corner</h2>
+            <p>Take a break, pick a book and make time for a new story.</p>
+            <h3>Today's reading tip</h3>
+            <p>Try setting aside a little time each day to enjoy a few pages.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ by BookNest</p>
+        <p>Discover stories. Explore worlds.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+                
+                    
