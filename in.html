@@ -1,0 +1,530 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TRAVEL FRIEND | Explore the World</title>
+
+    <link rel="stylesheet"
+     href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>TRAVEL FRIEND</h1>
+<ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#tips">Travel Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="home">
+            <h2>"THE WORLD IS WAITING.GO SEE IT".</h2>
+
+            <p>
+                Discover beautiful places and plan your next adventure
+                with TRAVEL FRIEND.
+            </p>
+
+            <button>Explore Destinations</button>
+</section>
+
+
+        <section id="destinations">
+
+            <h2>Popular Destinations</h2>
+
+            <div class="destination-container">
+
+                <div class="destination-card">
+                    <h3>Goa</h3>
+                    <p>Beaches, sunsets and unforgettable adventures.</p>
+                    <button 
+                    onclick="showGoa()">Explore Goa </button>
+                </div>
+
+                <div class="destination-card">
+                    <h3>Karnataka</h3>
+                    <p>Green hills, coffee plantations and rich culture.</p>
+                    <button
+                    onclick="showKarnataka()">Exlore Karnataka
+                </button>
+                    
+                </div>
+
+<div class="destination-card">
+                    <h3>Kerala</h3>
+                    <p>Backwaters, nature and beautiful landscapes.</p>
+                    <button
+                    onclick="showKerala()">Explore Kerala</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+<!-- Goa Details Section -->
+
+            
+        
+        <section id="goa-details">
+
+    <h2>🌴 Explore Goa</h2>
+
+    <h3>🏖️ Beaches</h3>
+
+    <div class="goa-container">
+        <!-- Palolem -->
+        <div class="goa-card">
+            <img src="images/Palolembeachgoa.jpg" alt="Palolem Beach">
+            <h3>🏖️ Palolem Beach</h3>
+            <p>⭐ 4.6/5</p>
+            <p>A beautiful and peaceful beach known for its scenic coastline and sunsets.</p>
+        </div>
+
+        <!-- Baga -->
+        <div class="goa-card">
+            <img src="images/Bagabeachgoa.jpg" alt="Baga Beach">
+            <h3>🏖️ Baga Beach</h3>
+            <p>⭐ 4.3/5</p>
+            <p>A lively beach with cafés, activities and a vibrant atmosphere.</p>
+        </div>
+
+        <!-- Arambol -->
+        <div class="goa-card">
+            <img src="images/Arambolbeachgoa.jpg" alt="Arambol Beach">
+            <h3>🌴 Arambol Beach</h3>
+            <p>⭐ 4.5/5</p>
+            <p>A relaxed beach known for its scenic surroundings and sunsets.</p>
+        </div>
+    </div>
+
+
+    <h3>☕ Cafés</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card">
+            <img src="images/cafedegoa.jpg" alt="Cafe de">
+            <h3>☕ Cafe de</h3>
+            <p>₹200-1,000 per Person</p>
+            <p>Cozy cafe offering a variety of sandwitches and coffee</p>
+            <p>⭐ 4.4/5</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/Antoniccafegoa.jpg" alt="Antonica Cafe">
+            <h3>☕ Antonica Cafe</h3>
+            <P>₹400-1500 per Person</P>
+            <p>Bali inspired Asthetics with open air decks and roof seatings</p>
+            <p>⭐ 4.3/5</p>
+        </div>
+
+    </div>
+
+
+    <h3>🌊 Water Rides & Experiences</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card">
+            <img src="images/konkanexplorers.jpg" alt="Konkan Explores">
+            <h3>🚤 Konkan Explores</h3>
+            <p>Professional Goan tour operator providing guided yacht cruises,kayaking,and paddleboarding adventures</p>
+            <p>⭐ 4.5/5</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/jetflyer.jpg" alt="Jet Flyers">
+            <h3>🚀 Jet Flyers</h3>
+            <p>Start from ₹1,500</p>
+            <p>Offers Jetflyer water-Propplrd jetpack experience starting at ₹3,899 per person for 10 mins to 20 mins session</p>
+            <p>⭐ 4.4/5</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/scuba.jpg" alt="Scuba Diving">
+            <h3>🤿 Scuba Diving</h3>
+            <p>₹1,200-1700 per Person for single day experience </p>
+            <P>Professional certification course ranges from ₹23,000-36,000</P>
+            <p>⭐ 4.5/5</p>
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- VIEWPOINTS -->
+
+    <h3>🌅 Viewpoints & Scenic Places</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card">
+            <img src="images/donapaula.jpg" alt="Dona Paula">
+            <h3>🌅 Dona Paula</h3>
+            <p>Beautiful sea views and a popular scenic spot in Goa.</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/chaporafort.jpg" alt="Chapora Fort">
+            <h3>🏰 Chapora Fort</h3>
+            <p>Historic fort offering beautiful views of the coastline.</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/aguadagoa.jpg" alt="Fort Aguada">
+            <h3>🏰 Fort Aguada</h3>
+            <p>A historic fort with views of the Arabian Sea.</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/caboderama.jpg" alt="Cabo de Rama">
+            <h3>🌊 Cabo de Rama</h3>
+            <p>A scenic coastal location surrounded by nature.</p>
+        </div>
+
+    </div>
+
+
+    <!-- FAMOUS CHURCHES -->
+
+    <h3>⛪ Famous Churches</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card">
+            <img src="images/basilica.jpg" alt="Basilica of Bom Jesus">
+            <h3>⛪ Basilica of Bom Jesus</h3>
+            <p>One of Goa's most famous historic churches.</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/secathedral.jpg" alt="Se Cathedral">
+            <h3>⛪ Se Cathedral</h3>
+            <p>A magnificent historic church in Old Goa.</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/ourlady.jpg" alt="Panaji Church">
+            <h3>⛪ Our Lady of Immaculate Conception</h3>
+            <p>A famous church and landmark in Panaji.</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/alexchurch.jpg" alt="St Alex Church">
+            <h3>⛪ St. Alex Church</h3>
+            <p>A beautiful historic church in Goa.</p>
+        </div>
+
+    </div>
+
+
+    <!-- WATERFALLS -->
+
+    <h3>💦 Waterfalls</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card">
+            <img src="images/dudhsagarfalls.jpg" alt="Dudhsagar Waterfalls">
+            <h3>💦 Dudhsagar Waterfalls</h3>
+            <p>One of Goa's most famous natural attractions.</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/tambdifalls.jpg" alt="Tambdi Surla Waterfall">
+            <h3>💦 Tambdi Surla Waterfall</h3>
+            <p>A beautiful waterfall surrounded by greenery.</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/harvalemfalls.jpg" alt="Harvalem Waterfall">
+            <h3>💦 Harvalem Waterfall</h3>
+            <p>A scenic waterfall surrounded by lush green surroundings.</p>
+        </div>
+
+    </div>
+
+
+    <!-- HERITAGE & CITIES -->
+
+    <h3>🏛️ Heritage & Cities</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card">
+            <img src="images/ooldgoa.jpg" alt="Old Goa">
+            <h3>🏛️ Old Goa</h3>
+            <p>Explore Goa's historic churches, monuments and heritage.</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/panaji.jpg" alt="Panaji">
+            <h3>🏙️ Panaji</h3>
+            <p>Goa's capital city, known for its heritage streets and riverside views.</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/font.jpg" alt="Fontainhas">
+            <h3>🏘️ Fontainhas</h3>
+            <p>Explore colourful Portuguese-style houses and heritage streets.</p>
+        </div>
+
+        <div class="goa-card">
+            <img src="images/margao.jpg" alt="Margao">
+            <h3>🏙️ Margao</h3>
+            <p>A major Goan city known for its markets and cultural character.</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="kerala-details">
+   style="display:none;">
+
+    <h2>🌴 Explore Kerala</h2>
+
+    <!-- BEACHES -->
+    <h3>🏖️ Beaches</h3>
+
+    <div class="kerala-container">
+
+        <div class="kerala-card">
+            <img src="images/varkalabeachkerala.jpg" alt="Varkala Beach">
+            <h3>🏖️ Varkala Beach</h3>
+            <p>Famous for its dramatic cliffside views and beautiful coastline.</p>
+        </div>
+
+        <div class="kerala-card">
+            <img src="images/kovalambeachkerala.jpg" alt="Kovalam Beach">
+            <h3>🏖️ Kovalam Beach</h3>
+            <p>A popular beach destination known for its coastal scenery.</p>
+        </div>
+
+        <div class="kerala-card">
+            <img src="images/ccherai.jpg" alt="Bekal Beach">
+            <h3>🏖️ Cherai Beach</h3>
+            <p>A scenic beach near the Cherai beach.</p>
+        </div>
+
+    </div>
+
+
+    <!-- BACKWATERS -->
+    <h3>🚤 Backwaters</h3>
+
+    <div class="kerala-container">
+
+        <div class="kerala-card">
+            <img src="images/alleppeybackwaters.jpg" alt="Alappuzha Backwaters">
+            <h3>🚤 Alappuzha Backwaters</h3>
+            <p>Explore Kerala's famous waterways and traditional houseboats.</p>
+        </div>
+
+        <div class="kerala-card">
+            <img src="images/kumarakombackwaterskerala.jpg" alt="Kumarakom">
+            <h3>🌴 Kumarakom</h3>
+            <p>A peaceful backwater destination beside Vembanad Lake.</p>
+        </div>
+
+        <div class="kerala-card">
+            <img src="images/ashtamudibackwatres.jpg" alt="Ashtamudi Lake">
+            <h3>🌊 Ashtamudi Lake</h3>
+            <p>A beautiful lake and major backwater destination in Kollam.</p>
+        </div>
+
+    </div>
+
+
+    <!-- HERITAGE -->
+    <h3>🏛️ Heritage Sites</h3>
+
+    <div class="kerala-container">
+
+        <div class="kerala-card">
+            <img src="images/palakkadfort.jpg" alt="Palakkad fort">
+            <h3>🏛️ Palakkad Fort</h3>
+            <p>Explore historic streets, colonial architecture and cultural landmarks.</p>
+        </div>
+
+        <div class="kerala-card">
+            <img src="images/bekalfortkerala.jpg" alt="Bekal Fort">
+            <h3>🏰 Bekal Fort</h3>
+            <p>A historic coastal fort overlooking the Arabian Sea.</p>
+        </div>
+
+        <div class="kerala-card">
+            <img src="images/edukkicaves.jpg" alt="Edukki caves">
+            <h3>🪨 Edukki caves</h3>
+            <p>Famous for ancient rock carvings and archaeological importance.</p>
+        </div>
+
+    </div>
+
+
+    <!-- HILL STATIONS -->
+    <h3>⛰️ Hill Stations</h3>
+
+    <div class="kerala-container">
+
+        <div class="goa-card">
+            <img src="images/munnar.jpg" alt="Munnar">
+            <h3>⛰️ Munnar</h3>
+            <p>Famous for tea plantations, misty hills and scenic landscapes.</p>
+        </div>
+
+        <div class="kerala-card">
+            <img src="images/wayanad.jpg" alt="Wayanad">
+            <h3>🌿 Wayanad</h3>
+            <p>A green hill region known for forests, plantations and nature.</p>
+        </div>
+
+        <div class="kerala-card">
+            <img src="images/vagamon.jpg" alt="Vagamon">
+            <h3>🌄 Vagamon</h3>
+            <p>A peaceful hill destination surrounded by green landscapes.</p>
+        </div>
+
+    </div>
+
+    <section id="karnataka-details" style="display: none;">
+
+    <h2>🌿 Explore Karnataka</h2>
+
+    <!-- Historic Places -->
+    <h3>🏛️ Historic Places</h3>
+
+    <div class="karnataka-container">
+
+        <div class="karnataka-card">
+            <img src="images/hampi.jpg" alt="Hampi">
+            <h4>Hampi</h4>
+            <p>Explore ancient ruins, temples and the fascinating history of the Vijayanagara Empire.</p>
+        </div>
+
+        <div class="karnataka-card">
+            <img src="images/mysore-palace.jpg" alt="Mysore Palace">
+            <h4>Mysore Palace</h4>
+            <p>A magnificent palace known for its royal architecture and rich heritage.</p>
+        </div>
+
+        <div class="karnataka-card">
+            <img src="images/badami-caves.jpg" alt="Badami Caves">
+            <h4>Badami Caves</h4>
+            <p>Discover impressive rock-cut caves and ancient temple architecture.</p>
+        </div>
+
+    </div>
+
+
+    <!-- Viewpoints and Hill Stations -->
+    <h3>⛰️ Viewpoints & Hill Stations</h3>
+
+    <div class="karnataka-container">
+
+        <div class="karnataka-card">
+            <img src="images/chikmagalur.jpg" alt="Chikmagalur">
+            <h4>Chikmagalur</h4>
+            <p>Enjoy beautiful hills, coffee plantations and peaceful mountain views.</p>
+        </div>
+
+        <div class="karnataka-card">
+            <img src="images/kudremukh.jpg" alt="Kudremukh">
+            <h4>Kudremukh</h4>
+            <p>A scenic mountain region surrounded by green landscapes and forests.</p>
+        </div>
+
+        <div class="karnataka-card">
+            <img src="images/nandi-hills.jpg" alt="Nandi Hills">
+            <h4>Nandi Hills</h4>
+            <p>A popular viewpoint offering beautiful sunrise and hilltop views.</p>
+        </div>
+
+    </div>
+
+
+    <!-- Wildlife and Nature Sanctuaries -->
+    <h3>🐘 Wildlife & Nature Sanctuaries</h3>
+
+    <div class="karnataka-container">
+
+        <div class="karnataka-card">
+            <img src="images/bandipur.jpg" alt="Bandipur National Park">
+            <h4>Bandipur National Park</h4>
+            <p>Explore forests and discover Karnataka's diverse wildlife.</p>
+        </div>
+
+        <div class="karnataka-card">
+            <img src="images/nagarhole.jpg" alt="Nagarhole National Park">
+            <h4>Nagarhole National Park</h4>
+            <p>A beautiful wildlife destination known for its forests and animals.</p>
+        </div>
+
+        <div class="karnataka-card">
+            <img src="images/bhadra.jpg" alt="Bhadra Wildlife Sanctuary">
+            <h4>Bhadra Wildlife Sanctuary</h4>
+            <p>Enjoy rich forests, wildlife and scenic natural surroundings.</p>
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+
+
+    
+
+
+
+
+<!-- Travel Tips Section -->
+
+
+        <section id="tips">
+
+            <h2>Travel Tips</h2>
+
+            <ul>
+                <li>Plan your budget before travelling.</li>
+                <li>Keep important documents safe.</li>
+                <li>Check the weather before your trip.</li>
+            </ul>
+
+        </section>
+
+
+        <section id="contact">
+
+            <h2>Contact Us</h2>
+<p>Have a destination in mind? Let's explore!</p>
+
+            <button>Get in Touch</button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 TRAVEL FRIEND. Explore more, worry less.</p>
+    </footer>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
+
