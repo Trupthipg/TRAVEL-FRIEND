@@ -1,0 +1,330 @@
+
+/* Basic settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation bar */
+header {
+    background-color: #77ad9c;
+    padding: 15px 8%;
+}
+
+nav {
+    display: flex;
+justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #424aa4;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2806bc;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #79293f;
+}
+/* Home section */
+#home {
+    min-height: 80vh;
+
+    background-image: linear-gradient(
+        rgba(9, 61, 173, 0.4),
+        rgba(40, 7, 94, 0.4)
+    ),
+    url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+#home h1 {
+    font-size: 50px;
+    max-width: 800px;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+#home a {
+    background-color: #293e85;
+    color: rgb(185, 124, 124);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#home a:hover {
+    background-color: #0b6e8a;
+    }
+
+/* Destinations section */
+#destinations {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+#destinations h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.destination-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    width: 220px;
+    padding: 30px 20px;
+    background-color: #f1f9fb;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+}
+
+.destination-card h3 {
+    color: #168aad;
+    margin-bottom: 10px;
+}
+
+/* Travel tips */
+#tips {
+    padding: 60px 8%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#tips h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+#tips ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#tips li {
+    margin: 10px;
+}
+
+/* Contact section */
+#contact {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+#contact a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #1699ad;
+    color: rgb(122, 69, 69);
+    text-decoration: none;
+border-radius: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #5c679a;
+    color: rgb(11, 3, 85);
+    text-align: center;
+    padding: 20px;
+}
+
+ nav h2{
+    color: red !important;
+ }
+
+ #goa-details {
+    display: none;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.goa-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+goa-card {
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.goa-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.goa-card h3 {
+    margin: 15px 10px 5px;
+}
+
+.goa-card p {
+    padding: 0 15px 20px;
+}
+/* Goa opening animation */
+
+.goa-opening {
+    animation: goaOpen 0.8s ease-out;
+}
+
+@keyframes goaOpen {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Individual Goa cards animation */
+
+.goa-opening .goa-card {
+    opacity: 0;
+    animation: cardAppear 0.6s ease forwards;
+}
+
+/* Cards appear one after another */
+
+.goa-opening .goa-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.goa-opening .goa-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.goa-opening .goa-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.goa-opening .goa-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+/* Kerala section */
+
+#kerala-details {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #e8f5e9, #e0f7fa);
+    border-radius: 20px;
+}
+
+#kerala-details > h2 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 35px;
+}
+
+#kerala-details > h3 {
+    text-align: center;
+    color: #e65100;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.kerala-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.kerala-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.kerala-card:hover {
+    transform: translateY(-7px);
+}
+
+.kerala-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.kerala-card h4 {
+    margin: 15px 15px 8px;
+    font-size: 20px;
+    color: #00796b;
+}
+
+.kerala-card p {
+    margin: 0 15px 18px;
+    color: #555;
+    line-height: 1.5;
+}
