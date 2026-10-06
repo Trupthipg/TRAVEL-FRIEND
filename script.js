@@ -1,6 +1,6 @@
 
 // Welcome message
-console.log("Welcome to WanderNest! 🌍");
+console.log("Welcome to Travel Friend! 🌍");
 
 // Get the Explore Destinations button
 const exploreButton = document.querySelector("#home a");
@@ -15,36 +15,71 @@ exploreButton.addEventListener("click", function () {
 const contactButton = document.querySelector("#contact a");
 
 contactButton.addEventListener("click", function () {
-    alert("Thanks for visiting WanderNest! ✈️");
+    alert("Thanks for visiting Travel Friend! ✈️");
 });
+function hideAllDetails() {
+    document.getElementById("goa-details").style.display = "none";
+    document.getElementById("kerala-details").style.display = "none";
+    document.getElementById("karnataka-details").style.display = "none";
+}
+
 function showGoa() {
-    const goaDetails = document.querySelector("#goa-details");
+    hideAllDetails();
 
-    goaDetails.style.display = "block";
+    const goa = document.getElementById("goa-details");
+    goa.style.display = "block";
 
-    goaDetails.classList.remove("goa-opening");
-
-    // Restart animation
-    void goaDetails.offsetWidth;
-
-    goaDetails.classList.add("goa-opening");
-
-    goaDetails.scrollIntoView({
+    goa.scrollIntoView({
         behavior: "smooth"
     });
 }
+
 function showKerala() {
-    const keralaDetails = document.querySelector("#kerala-details");
+    hideAllDetails();
 
-    keralaDetails.style.display = "block";
+    const kerala = document.getElementById("kerala-details");
+    kerala.style.display = "block";
 
-    keralaDetails.classList.remove("goa-opening");
-
-    void keralaDetails.offsetWidth;
-
-    keralaDetails.classList.add("goa-opening");
-
-    keralaDetails.scrollIntoView({
+    kerala.scrollIntoView({
         behavior: "smooth"
     });
 }
+
+function showKarnataka() {
+    hideAllDetails();
+
+    const karnataka = document.getElementById("karnataka-details");
+    karnataka.style.display = "block";
+
+    karnataka.scrollIntoView({
+        behavior: "smooth"
+    });
+}
+function addFavourite(button) {
+
+    const card = button.parentElement;
+    const name = card.getAttribute("data-name");
+    const favouriteList = document.getElementById("favourite-list");
+
+    if (button.classList.contains("favourite")) {
+
+        button.classList.remove("favourite");
+        button.innerHTML = "♡ Add to Favourites";
+
+        const item = document.getElementById("fav-" + name);
+        item.remove();
+
+    } else {
+
+        button.classList.add("favourite");
+        button.innerHTML = "❤️ Favourited";
+
+        const item = document.createElement("p");
+        item.id = "fav-" + name;
+        item.innerHTML = "📍 " + name;
+
+        favouriteList.appendChild(item);
+
+    }
+}
+

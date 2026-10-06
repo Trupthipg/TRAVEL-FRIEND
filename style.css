@@ -128,6 +128,27 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+#favourites {
+    padding: 40px 20px;
+    margin-top: 30px;
+    background: #fff3e0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#favourites h2 {
+    color: #e65100;
+    margin-bottom: 20px;
+}
+
+#favourite-list {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
 /* Travel tips */
 #tips {
     padding: 60px 8%;
@@ -324,6 +345,65 @@ goa-card {
 }
 
 .kerala-card p {
+    margin: 0 15px 18px;
+    color: #555;
+    line-height: 1.5;
+}
+/* Karnataka Section */
+
+#karnataka-details {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #e8f5e9, #fff8e1);
+    border-radius: 20px;
+}
+
+#karnataka-details > h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 35px;
+}
+
+#karnataka-details > h3 {
+    text-align: center;
+    color: #e65100;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.karnataka-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.karnataka-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.karnataka-card:hover {
+    transform: translateY(-7px);
+}
+
+.karnataka-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.karnataka-card h4 {
+    margin: 15px 15px 8px;
+    color: #2e7d32;
+    font-size: 20px;
+}
+
+.karnataka-card p {
     margin: 0 15px 18px;
     color: #555;
     line-height: 1.5;

@@ -19,6 +19,9 @@
 <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#favourites">
+                    Favourites</a></li>
+                </a></li>
                 <li><a href="#tips">Travel Tips</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -57,8 +60,7 @@
                     <h3>Karnataka</h3>
                     <p>Green hills, coffee plantations and rich culture.</p>
                     <button
-                    onclick="showKarnataka()">Exlore Karnataka
-                </button>
+                    onclick="showKarnataka()">Explore Karnataka</button>
                     
                 </div>
 
@@ -71,7 +73,7 @@
 
             </div>
 
-        </section>
+        </section> 
 
 
 
@@ -79,7 +81,8 @@
 
             
         
-        <section id="goa-details">
+        <section id="goa-details"
+        style="display: none;">
 
     <h2>🌴 Explore Goa</h2>
 
@@ -92,6 +95,9 @@
             <h3>🏖️ Palolem Beach</h3>
             <p>⭐ 4.6/5</p>
             <p>A beautiful and peaceful beach known for its scenic coastline and sunsets.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
         <!-- Baga -->
@@ -100,6 +106,9 @@
             <h3>🏖️ Baga Beach</h3>
             <p>⭐ 4.3/5</p>
             <p>A lively beach with cafés, activities and a vibrant atmosphere.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
         <!-- Arambol -->
@@ -108,6 +117,9 @@
             <h3>🌴 Arambol Beach</h3>
             <p>⭐ 4.5/5</p>
             <p>A relaxed beach known for its scenic surroundings and sunsets.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
     </div>
 
@@ -122,6 +134,9 @@
             <p>₹200-1,000 per Person</p>
             <p>Cozy cafe offering a variety of sandwitches and coffee</p>
             <p>⭐ 4.4/5</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
         <div class="goa-card">
@@ -130,6 +145,9 @@
             <P>₹400-1500 per Person</P>
             <p>Bali inspired Asthetics with open air decks and roof seatings</p>
             <p>⭐ 4.3/5</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
@@ -144,6 +162,9 @@
             <h3>🚤 Konkan Explores</h3>
             <p>Professional Goan tour operator providing guided yacht cruises,kayaking,and paddleboarding adventures</p>
             <p>⭐ 4.5/5</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
         <div class="goa-card">
@@ -152,6 +173,9 @@
             <p>Start from ₹1,500</p>
             <p>Offers Jetflyer water-Propplrd jetpack experience starting at ₹3,899 per person for 10 mins to 20 mins session</p>
             <p>⭐ 4.4/5</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
         <div class="goa-card">
@@ -160,6 +184,9 @@
             <p>₹1,200-1700 per Person for single day experience </p>
             <P>Professional certification course ranges from ₹23,000-36,000</P>
             <p>⭐ 4.5/5</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
@@ -176,24 +203,36 @@
             <img src="images/donapaula.jpg" alt="Dona Paula">
             <h3>🌅 Dona Paula</h3>
             <p>Beautiful sea views and a popular scenic spot in Goa.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
         <div class="goa-card">
             <img src="images/chaporafort.jpg" alt="Chapora Fort">
             <h3>🏰 Chapora Fort</h3>
             <p>Historic fort offering beautiful views of the coastline.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
         <div class="goa-card">
             <img src="images/aguadagoa.jpg" alt="Fort Aguada">
             <h3>🏰 Fort Aguada</h3>
             <p>A historic fort with views of the Arabian Sea.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
         <div class="goa-card">
             <img src="images/caboderama.jpg" alt="Cabo de Rama">
             <h3>🌊 Cabo de Rama</h3>
             <p>A scenic coastal location surrounded by nature.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
@@ -209,24 +248,37 @@
             <img src="images/basilica.jpg" alt="Basilica of Bom Jesus">
             <h3>⛪ Basilica of Bom Jesus</h3>
             <p>One of Goa's most famous historic churches.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
         <div class="goa-card">
             <img src="images/secathedral.jpg" alt="Se Cathedral">
             <h3>⛪ Se Cathedral</h3>
             <p>A magnificent historic church in Old Goa.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
         <div class="goa-card">
             <img src="images/ourlady.jpg" alt="Panaji Church">
             <h3>⛪ Our Lady of Immaculate Conception</h3>
             <p>A famous church and landmark in Panaji.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="goa-card">
+        <div class="goa-card"
+            data-name="St. Alex Church">
             <img src="images/alexchurch.jpg" alt="St Alex Church">
             <h3>⛪ St. Alex Church</h3>
             <p>A beautiful historic church in Goa.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
@@ -238,22 +290,34 @@
 
     <div class="goa-container">
 
-        <div class="goa-card">
+        <div class="goa-card"
+            data-name="Dudhsagar Waterfalls">
             <img src="images/dudhsagarfalls.jpg" alt="Dudhsagar Waterfalls">
             <h3>💦 Dudhsagar Waterfalls</h3>
             <p>One of Goa's most famous natural attractions.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="goa-card">
+        <div class="goa-card"
+            data-name="Tambdi Surla Waterfall">
             <img src="images/tambdifalls.jpg" alt="Tambdi Surla Waterfall">
             <h3>💦 Tambdi Surla Waterfall</h3>
             <p>A beautiful waterfall surrounded by greenery.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="goa-card">
+        <div class="goa-card"
+            data-name="Harvalem Waterfall">
             <img src="images/harvalemfalls.jpg" alt="Harvalem Waterfall">
             <h3>💦 Harvalem Waterfall</h3>
             <p>A scenic waterfall surrounded by lush green surroundings.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
@@ -265,36 +329,53 @@
 
     <div class="goa-container">
 
-        <div class="goa-card">
+        <div class="goa-card"
+            data-name="Old Goa">
+            
             <img src="images/ooldgoa.jpg" alt="Old Goa">
             <h3>🏛️ Old Goa</h3>
             <p>Explore Goa's historic churches, monuments and heritage.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="goa-card">
+        <div class="goa-card"
+            data-name="Panaji">
             <img src="images/panaji.jpg" alt="Panaji">
             <h3>🏙️ Panaji</h3>
             <p>Goa's capital city, known for its heritage streets and riverside views.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="goa-card">
+        <div class="goa-card"
+            data-name="Fontainhas">
             <img src="images/font.jpg" alt="Fontainhas">
             <h3>🏘️ Fontainhas</h3>
             <p>Explore colourful Portuguese-style houses and heritage streets.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="goa-card">
+        <div class="goa-card"
+            data-name=" Margao">
             <img src="images/margao.jpg" alt="Margao">
             <h3>🏙️ Margao</h3>
             <p>A major Goan city known for its markets and cultural character.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
 
 </section>
-<section id="kerala-details">
-   style="display:none;">
-
+<section id="kerala-details"
+style="display: none;">
+   
     <h2>🌴 Explore Kerala</h2>
 
     <!-- BEACHES -->
@@ -302,22 +383,34 @@
 
     <div class="kerala-container">
 
-        <div class="kerala-card">
+        <div class="kerala-card"
+            data-name="Varkala Beach">
             <img src="images/varkalabeachkerala.jpg" alt="Varkala Beach">
             <h3>🏖️ Varkala Beach</h3>
             <p>Famous for its dramatic cliffside views and beautiful coastline.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="kerala-card">
+        <div class="kerala-card"
+            data-name="Kovalam Beach">
             <img src="images/kovalambeachkerala.jpg" alt="Kovalam Beach">
             <h3>🏖️ Kovalam Beach</h3>
             <p>A popular beach destination known for its coastal scenery.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="kerala-card">
+        <div class="kerala-card"
+            data-name="Cherai Beach">
             <img src="images/ccherai.jpg" alt="Bekal Beach">
             <h3>🏖️ Cherai Beach</h3>
             <p>A scenic beach near the Cherai beach.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
@@ -328,22 +421,34 @@
 
     <div class="kerala-container">
 
-        <div class="kerala-card">
+        <div class="kerala-card"
+            data-name=" Alappuzha Backwaters">
             <img src="images/alleppeybackwaters.jpg" alt="Alappuzha Backwaters">
             <h3>🚤 Alappuzha Backwaters</h3>
             <p>Explore Kerala's famous waterways and traditional houseboats.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="kerala-card">
+        <div class="kerala-card"
+            data-name="Kumarakom">
             <img src="images/kumarakombackwaterskerala.jpg" alt="Kumarakom">
             <h3>🌴 Kumarakom</h3>
             <p>A peaceful backwater destination beside Vembanad Lake.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="kerala-card">
+        <div class="kerala-card"
+            data-name="Ashtamudi Lake">
             <img src="images/ashtamudibackwatres.jpg" alt="Ashtamudi Lake">
             <h3>🌊 Ashtamudi Lake</h3>
             <p>A beautiful lake and major backwater destination in Kollam.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
@@ -354,22 +459,34 @@
 
     <div class="kerala-container">
 
-        <div class="kerala-card">
+        <div class="kerala-card"
+            data-name="Palakkad Fort">
             <img src="images/palakkadfort.jpg" alt="Palakkad fort">
             <h3>🏛️ Palakkad Fort</h3>
             <p>Explore historic streets, colonial architecture and cultural landmarks.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="kerala-card">
+        <div class="kerala-card"
+          data-name="Bekal Fort">
             <img src="images/bekalfortkerala.jpg" alt="Bekal Fort">
             <h3>🏰 Bekal Fort</h3>
             <p>A historic coastal fort overlooking the Arabian Sea.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="kerala-card">
+        <div class="kerala-card"
+        data-name="Edukki caves">
             <img src="images/edukkicaves.jpg" alt="Edukki caves">
             <h3>🪨 Edukki caves</h3>
             <p>Famous for ancient rock carvings and archaeological importance.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
@@ -380,27 +497,41 @@
 
     <div class="kerala-container">
 
-        <div class="goa-card">
+        <div class="goa-card"
+            data-name="Munnar">
             <img src="images/munnar.jpg" alt="Munnar">
             <h3>⛰️ Munnar</h3>
             <p>Famous for tea plantations, misty hills and scenic landscapes.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
         <div class="kerala-card">
+            data-name="Wayanad">
             <img src="images/wayanad.jpg" alt="Wayanad">
             <h3>🌿 Wayanad</h3>
             <p>A green hill region known for forests, plantations and nature.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="kerala-card">
+        <div class="kerala-card"
+            data-name="Vagamon">
             <img src="images/vagamon.jpg" alt="Vagamon">
             <h3>🌄 Vagamon</h3>
             <p>A peaceful hill destination surrounded by green landscapes.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
+    </section>
 
-    <section id="karnataka-details" style="display: none;">
+    <section id="karnataka-details" 
+    style="display: none;">
 
     <h2>🌿 Explore Karnataka</h2>
 
@@ -409,22 +540,39 @@
 
     <div class="karnataka-container">
 
-        <div class="karnataka-card">
+        <div class="karnataka-card"
+            data-name="Hampi">
             <img src="images/hampi.jpg" alt="Hampi">
             <h4>Hampi</h4>
             <p>Explore ancient ruins, temples and the fascinating history of the Vijayanagara Empire.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
+        
+</button>
 
-        <div class="karnataka-card">
-            <img src="images/mysore-palace.jpg" alt="Mysore Palace">
+        <div class="karnataka-card"
+            data-name="Mysore Palace">
+            <img src="images/mysorepalace.jpg" alt="Mysore Palace">
             <h4>Mysore Palace</h4>
             <p>A magnificent palace known for its royal architecture and rich heritage.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
+        
+</button>
 
-        <div class="karnataka-card">
-            <img src="images/badami-caves.jpg" alt="Badami Caves">
+        <div class="karnataka-card"
+        data-name="Badami Caves">
+
+            <img src="images/badamicaves.jpg" alt="Badami Caves">
             <h4>Badami Caves</h4>
             <p>Discover impressive rock-cut caves and ancient temple architecture.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
@@ -435,22 +583,34 @@
 
     <div class="karnataka-container">
 
-        <div class="karnataka-card">
-            <img src="images/chikmagalur.jpg" alt="Chikmagalur">
-            <h4>Chikmagalur</h4>
+        <div class="karnataka-card"
+            data-name="Chikmagaluru">
+            <img src="images/chikmagakur.jpg" alt="Chikmagalur">
+            <h4>Chikmagaluru</h4>
             <p>Enjoy beautiful hills, coffee plantations and peaceful mountain views.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="karnataka-card">
-            <img src="images/kudremukh.jpg" alt="Kudremukh">
-            <h4>Kudremukh</h4>
+        <div class="karnataka-card"
+        data-name="Kudremukha">
+            <img src="images/kudremukha.jpg" alt="Kudremukh">
+            <h4>Kudremukha</h4>
             <p>A scenic mountain region surrounded by green landscapes and forests.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="karnataka-card">
-            <img src="images/nandi-hills.jpg" alt="Nandi Hills">
+        <div class="karnataka-card"
+        data-name="Nandi Hills">
+            <img src="images/nandihills.jpg" alt="Nandi Hills">
             <h4>Nandi Hills</h4>
             <p>A popular viewpoint offering beautiful sunrise and hilltop views.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
@@ -461,22 +621,35 @@
 
     <div class="karnataka-container">
 
-        <div class="karnataka-card">
-            <img src="images/bandipur.jpg" alt="Bandipur National Park">
-            <h4>Bandipur National Park</h4>
+        <div class="karnataka-card"
+            data-name="Bandipura National Park">
+            <img src="images/bandipura.jpg" alt="Bandipur National Park">
+            <h4>Bandipura National Park</h4>
             <p>Explore forests and discover Karnataka's diverse wildlife.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="karnataka-card">
-            <img src="images/nagarhole.jpg" alt="Nagarhole National Park">
-            <h4>Nagarhole National Park</h4>
+        <div class="karnataka-card"
+            data-name="Nagarahole National Park">
+            <img src="images/nagarahole.jpg" alt="Nagarhole National Park">
+            <h4>Nagarahole National Park</h4>
             <p>A beautiful wildlife destination known for its forests and animals.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
-        <div class="karnataka-card">
+        <div class="karnataka-card"
+        data-name="Bhadra Wildlife Sanctuary">
+
             <img src="images/bhadra.jpg" alt="Bhadra Wildlife Sanctuary">
             <h4>Bhadra Wildlife Sanctuary</h4>
             <p>Enjoy rich forests, wildlife and scenic natural surroundings.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
         </div>
 
     </div>
@@ -525,6 +698,13 @@
     </footer>
  
     <script src="script.js"></script>
+    <section id="favourites">
+    <h2>❤️ My Favourites</h2>
+
+    <div id="favourite-list">
+        <p>No favourites added yet.</p>
+    </div>
+</section>
 </body>
 </html>
 
