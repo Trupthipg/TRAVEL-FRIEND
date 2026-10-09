@@ -1,273 +1,823 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookNest | Discover Your Next Read</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>TRAVEL FRIEND | Explore the World with Us</title>
+
+    <link rel="stylesheet"
+     href="style.css">
 </head>
+
 <body>
 
     <header>
-        <h1>📚 BookNest</h1>
-        <p>Discover your next favourite book.</p>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#genres">Genres</a>
-            <a href="#books">Books</a>
-            <a href="#moods">By Mood</a>
-            <a href="#reading">Reading Corner</a>
+            <h1>TRAVEL FRIEND</h1>
+<ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#favourites">
+                    Favourites</a></li>
+                </a></li>
+                <li><a href="#tips">Travel Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        </header>
-
-    <main id="home">
-        <section class="search-section">
-            <h2>Find your next adventure</h2>
-            <p>Explore stories, discover authors and find books you'll love.</p>
-            <input type="search" id="search"
-                placeholder="Search by book or author...">
-            <button type="button" id="searchButton">Search</button>
-        </section>
-
-        <section class="daily-book">
-            <h2>📖 Book of the Day</h2>
-            <h3>The Little Prince</h3>
-            <p>By Antoine de Saint-Exupéry</p>
-            <p>A classic tale about friendship, imagination and seeing the world differently.</p>
-            <button type="button">Discover this book</button>
-        </section>
-
-        <section id="genres" class="genres">
-            <h2>Explore Genres</h2>
-            <button type="button" data-genre="All">All</button>
-            <button type="button" data-genre="Fantasy">Fantasy</button>
-            <button type="button" data-genre="Mystery">Mystery</button>
-            <button type="button" data-genre="Romance">Romance</button>
-            <button type="button" data-genre="Adventure">Adventure</button>
-            <button type="button" data-genre="Thriller">Thriller</button>
-            <button type="button" data-genre="Scifi">science fiction</button>
-            <button type="button" data-genre="Horror">Horror</button>
+    </header>
 
 
+    <main>
 
-        </section>
+        <section id="home">
+            <h2>"THE WORLD IS WAITING.GO SEE IT".</h2>
 
-        <section id="books" class="book-section">
-            <h2>Popular Books</h2>
-            <div class="book-container">
-                <article class="book-card" data-genre="Fantasy">
-                    <div class="book-cover">📕</div>
-                    <h3>Harry Potter</h3>
-                    <p>J.K. Rowling</p>
-                    <span>Fantasy</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
+            <p>
+                Discover beautiful places and plan your next adventure
+                with TRAVEL FRIEND.
+            </p>
 
-                <article class="book-card" data-genre="Fantasy">
-                    <div class="book-cover">📙</div>
-                    <h3>The Little Prince</h3>
-                    <p>Antoine de Saint-Exupéry</p>
-                    <span>Fantasy</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                <article class="book-card" data-genre="Fantasy">
-                    <div class="book-cover">📕</div>
-                    <h3>Alice in Wonderland</h3>
-                    <p>Lewis Carroll</p>
-                    <span>Fantasy</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-
-                <article class="book-card" data-genre="Fantasy">
-                    <div class="book-cover">📗</div>
-                    <h3>The Hobbit</h3>
-                    <p>J.R.R. Tolkien</p>
-                    <span>Fantasy</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-
-                <article class="book-card" data-genre="Fantasy">
-                    <div class="book-cover">📗</div>
-                    <h3>Bodies of Magic</h3>
-                    <p>Freya Marske</p>
-                    <span>Fantasy</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                article class="book-card" data-genre="Fantasy">
-                    <div class="book-cover">📗</div>
-                    <h3>A song of Ice and Fire</h3>
-                    <p>George RR Martin</p>
-                    <span>Fantasy</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                 <article class="book-card" data-genre="Mystery">
-                    <div class="book-cover">📘</div>
-                    <h3>Sherlock Holmes</h3>
-                    <p>Arthur Conan Doyle</p>
-                    <span>Mystery</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                <article class="book-card" data-genre="Mystery">
-                    <div class="book-cover">📙</div>
-                    <h3>And Then There Were None</h3>
-                    <p>Agatha Christie</p>
-                    <span>Mystery</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-
-                <article class="book-card" data-genre="Mystery">
-                    <div class="book-cover">📙</div>
-                    <h3>what Maya say</h3>
-                    <p>Shabnam Minwalla</p>
-                    <span>Mystery</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-                <article class="book-card" data-genre="Thriller">
-<div class="book-cover">📕</div>
-                    <h3>The Housemaid</h3>
-                    <p>Freida McFadden</p>
-                    <span>Thriller</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                <article class="book-card" data-genre="Thriller">
-                    <div class="book-cover">📘</div>
-                    <h3>The Silent Patient</h3>
-                    <p>Alex Michaelides</p>
-                    <span>Thriller</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                <article class="book-card" data-genre="Thriller">
-                    <div class="book-cover">📘</div>
-                    <h3>Verity</h3>
-                    <p>Collen Hoover</p>
-                    <span>Mystery</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                <article class="book-card" data-genre="Thriller">
-                    <div class="book-cover">📘</div>
-                    <h3>A Good Girl's Guide To Murder</h3>
-                    <p>Holly Jackson</p>
-                    <span>Mystery</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                <article class="book-card" data-genre="Romance">
-                    <div class="book-cover">📗</div>
-                    <h3>The Fault in Our Stars</h3>
-                    <p>John Green</p>
-                    <span>Romance</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                <article class="book-card" data-genre="Romance">
-                    <div class="book-cover">📙</div>
-                    <h3>Pride and Prejudice</h3>
-                    <p>Jane Austen</p>
-                    <span>Romance</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-
-                <article class="book-card" data-genre="Romance">
-                    <div class="book-cover">📙</div>
-                    <h3>It Ends With Us</h3>
-                    <p>Collen Hoover</p>
-                    <span>Romance</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                
-                <article class="book-card" data-genre="Adventure">
-                    <div class="book-cover">📗</div>
-                    <h3>Tom Sawyer</h3>
-                    <p>Mark Twain</p>
-                    <span>Adventure</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                <article class="book-card" data-genre="Romance">
-                    <div class="book-cover">📙</div>
-                    <h3>Pride and Prejudice</h3>
-                    <p>Jane Austen</p>
-                    <span>Romance</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-                <article class="book-card" data-genre="Romance">
-                    <div class="book-cover">📙</div>
-                    <h3>It Ends With Us</h3>
-                    <p>Collen Hoveer</p>
-                    <span>Romance</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-
-                <article class="book-card" data-genre="Romance">
-                    <div class="book-cover">📙</div>
-                    <h3>The Duke and I</h3>
-                    <p>Julia Quinn</p>
-                    <span>Romance</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-
-
-                
-
-                <article class="book-card" data-genre="Mystery">
-                    <div class="book-cover">📘</div>
-                    <h3>The Thursday Murder Club</h3>
-                    <p>Richard Osman</p>
-                    <span>Mystery</span>
-                    <button type="button" class="favorite">♡ Favourite</button>
-                </article>
-              </div>
-                
+            
 </section>
 
-        <section id="moods" class="moods">
-            <h2>Browse by Mood</h2>
-            <div class="mood-container">
-                <article>
-                    <h3>🌧️ Rainy Day Reads</h3>
-                    <p>Stories for a quiet, cosy day.</p>
-                </article>
-                <article>
-                    <h3>🔍 Mystery Lovers</h3>
-                    <p>Uncover secrets and solve puzzles.</p>
-                </article>
-                <article>
-                    <h3>✨ Magical Adventures</h3>
-                    <p>Explore imaginative worlds.</p>
-                </article>
+
+        <section id="destinations">
+
+            <h2>Popular Destinations</h2>
+
+            <div class="destination-container">
+
+                <div class="destination-card">
+                    <h3>Goa</h3>
+                    <p>Beaches, sunsets and unforgettable adventures.</p>
+                    <button 
+                    onclick="showGoa()">Explore Goa </button>
+                </div>
+
+                <div class="destination-card">
+                    <h3>Karnataka</h3>
+                    <p>Green hills, coffee plantations and rich culture.</p>
+                    <button
+                    onclick="showKarnataka()">Explore Karnataka</button>
+                    
+                </div>
+
+<div class="destination-card">
+                    <h3>Kerala</h3>
+                    <p>Backwaters, nature and beautiful landscapes.</p>
+                    <button
+                    onclick="showKerala()">Explore Kerala</button>
+                </div>
+<div class="destination-card">
+             <h3>Tamilnadu</h3>
+             <p>Temple,beaches heritage cites and hill stations</p>
+             <button
+               onclick="showTamilnadu()">Explore Tamilnadu</button>
+             </div>
             </div>
         </section>
+<!-- Goa Details Section -->
 
-        <section id="reading" class="reading">
-            <h2>📚 Reading Corner</h2>
-            <p>Take a break, pick a book and make time for a new story.</p>
-            <h3>Today's reading tip</h3>
-            <p>Try setting aside a little time each day to enjoy a few pages.</p>
+            
+        
+        <section id="goa-details"
+        style="display: none;">
+
+    <h2>🌴 Explore Goa</h2>
+
+    <h3>🏖️ Beaches</h3>
+
+    <div class="goa-container">
+        <!-- Palolem -->
+        <div class="goa-card"
+            data-name="Palolem Beach">
+            <img src="images/Palolembeachgoa.jpg" alt="Palolem Beach">
+            <h3>🏖️ Palolem Beach</h3>
+            <p>⭐ 4.6/5</p>
+            <p>A beautiful and peaceful beach known for its scenic coastline and sunsets.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <!-- Baga -->
+        <div class="goa-card"
+            data-name="Baga Beach">
+            <img src="images/Bagabeachgoa.jpg" alt="Baga Beach">
+            <h3>🏖️ Baga Beach</h3>
+            <p>⭐ 4.3/5</p>
+            <p>A lively beach with cafés, activities and a vibrant atmosphere.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <!-- Arambol -->
+        <div class="goa-card"
+            data-name="Arambol Beach">
+            <img src="images/Arambolbeachgoa.jpg" alt="Arambol Beach">
+            <h3>🌴 Arambol Beach</h3>
+            <p>⭐ 4.5/5</p>
+            <p>A relaxed beach known for its scenic surroundings and sunsets.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+    </div>
+
+
+    <h3>☕ Cafés</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card"
+            data-name="Cafe de">
+            <img src="images/cafedegoa.jpg" alt="Cafe de">
+            <h3>☕ Cafe de</h3>
+            <p>₹200-1,000 per Person</p>
+            <p>Cozy cafe offering a variety of sandwitches and coffee</p>
+            <p>⭐ 4.4/5</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="Antonica Cafe">
+            <img src="images/Antoniccafegoa.jpg" alt="Antonica Cafe">
+            <h3>☕ Antonica Cafe</h3>
+            <P>₹400-1500 per Person</P>
+            <p>Bali inspired Asthetics with open air decks and roof seatings</p>
+            <p>⭐ 4.3/5</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+    </div>
+
+
+    <h3>🌊 Water Rides & Experiences</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card"
+            data-name="Konkan Explores">
+            <img src="images/konkanexplorers.jpg" alt="Konkan Explores">
+            <h3>🚤 Konkan Explores</h3>
+            <p>Professional Goan tour operator providing guided yacht cruises,kayaking,and paddleboarding adventures</p>
+            <p>⭐ 4.5/5</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="Jet Flyers">
+            <img src="images/jetflyer.jpg" alt="Jet Flyers">
+            <h3>🚀 Jet Flyers</h3>
+            <p>Start from ₹1,500</p>
+            <p>Offers Jetflyer water-Propplrd jetpack experience starting at ₹3,899 per person for 10 mins to 20 mins session</p>
+            <p>⭐ 4.4/5</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="Scuba Diving">
+            <img src="images/scuba.jpg" alt="Scuba Diving">
+            <h3>🤿 Scuba Diving</h3>
+            <p>₹1,200-1700 per Person for single day experience </p>
+            <P>Professional certification course ranges from ₹23,000-36,000</P>
+            <p>⭐ 4.5/5</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+    </div>
+    
+    <!-- VIEWPOINTS -->
+
+    <h3>🌅 Viewpoints & Scenic Places</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card"
+            data-name="Dona Paula">
+            <img src="images/donapaula.jpg" alt="Dona Paula">
+            <h3>🌅 Dona Paula</h3>
+            <p>Beautiful sea views and a popular scenic spot in Goa.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="Chapora Fort">
+            <img src="images/chaporafort.jpg" alt="Chapora Fort">
+            <h3>🏰 Chapora Fort</h3>
+            <p>Historic fort offering beautiful views of the coastline.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="Fort Aguada">
+            <img src="images/aguadagoa.jpg" alt="Fort Aguada">
+            <h3>🏰 Fort Aguada</h3>
+            <p>A historic fort with views of the Arabian Sea.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="Cabo de Rama">
+            <img src="images/caboderama.jpg" alt="Cabo de Rama">
+            <h3>🌊 Cabo de Rama</h3>
+            <p>A scenic coastal location surrounded by nature.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+    </div>
+
+
+    <!-- FAMOUS CHURCHES -->
+
+    <h3>⛪ Famous Churches</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card"
+            data-name="Basilica of Bom Jesus">
+            <img src="images/basilica.jpg" alt="Basilica of Bom Jesus">
+            <h3>⛪ Basilica of Bom Jesus</h3>
+            <p>One of Goa's most famous historic churches.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="Se Cathedral">
+            <img src="images/secathedral.jpg" alt="Se Cathedral">
+            <h3>⛪ Se Cathedral</h3>
+            <p>A magnificent historic church in Old Goa.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name=" Our Lady of Immaculate Conception">
+            <img src="images/ourlady.jpg" alt="Panaji Church">
+            <h3>⛪ Our Lady of Immaculate Conception</h3>
+            <p>A famous church and landmark in Panaji.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="St. Alex Church">
+            <img src="images/alexchurch.jpg" alt="St Alex Church">
+            <h3>⛪ St. Alex Church</h3>
+            <p>A beautiful historic church in Goa.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+    </div>
+
+
+    <!-- WATERFALLS -->
+
+    <h3>💦 Waterfalls</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card"
+            data-name="Dudhsagar Waterfalls">
+            <img src="images/dudhsagarfalls.jpg" alt="Dudhsagar Waterfalls">
+            <h3>💦 Dudhsagar Waterfalls</h3>
+            <p>One of Goa's most famous natural attractions.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="Tambdi Surla Waterfall">
+            <img src="images/tambdifalls.jpg" alt="Tambdi Surla Waterfall">
+            <h3>💦 Tambdi Surla Waterfall</h3>
+            <p>A beautiful waterfall surrounded by greenery.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="Harvalem Waterfall">
+            <img src="images/harvalemfalls.jpg" alt="Harvalem Waterfall">
+            <h3>💦 Harvalem Waterfall</h3>
+            <p>A scenic waterfall surrounded by lush green surroundings.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+    </div>
+
+
+    <!-- HERITAGE & CITIES -->
+
+    <h3>🏛️ Heritage & Cities</h3>
+
+    <div class="goa-container">
+
+        <div class="goa-card"
+            data-name="Old Goa">
+            
+            <img src="images/ooldgoa.jpg" alt="Old Goa">
+            <h3>🏛️ Old Goa</h3>
+            <p>Explore Goa's historic churches, monuments and heritage.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="Panaji">
+            <img src="images/panaji.jpg" alt="Panaji">
+            <h3>🏙️ Panaji</h3>
+            <p>Goa's capital city, known for its heritage streets and riverside views.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="goa-card"
+            data-name="Fontainhas">
+            <img src="images/font.jpg" alt="Fontainhas">
+            <h3>🏘️ Fontainhas</h3>
+            <p>Explore colourful Portuguese-style houses and heritage streets.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        
+    </section>
+
+
+<section id="kerala-details"
+style="display: none;">
+   
+    <h2>🌴 Explore Kerala</h2>
+
+    <!-- BEACHES -->
+    <h3>🏖️ Beaches</h3>
+
+    <div class="kerala-container">
+
+        <div class="kerala-card"
+            data-name="Varkala Beach">
+            <img src="images/varkalabeachkerala.jpg" alt="Varkala Beach">
+            <h3>🏖️ Varkala Beach</h3>
+            <p>Famous for its dramatic cliffside views and beautiful coastline.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="kerala-card"
+            data-name="Kovalam Beach">
+            <img src="images/kovalambeachkerala.jpg" alt="Kovalam Beach">
+            <h3>🏖️ Kovalam Beach</h3>
+            <p>A popular beach destination known for its coastal scenery.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="kerala-card"
+            data-name="Cherai Beach">
+            <img src="images/ccherai.jpg" alt="Bekal Beach">
+            <h3>🏖️ Cherai Beach</h3>
+            <p>A scenic beach near the Cherai beach.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+    </div>
+
+
+    <!-- BACKWATERS -->
+    <h3>🚤 Backwaters</h3>
+
+    <div class="kerala-container">
+
+        <div class="kerala-card"
+            data-name=" Alappuzha Backwaters">
+            <img src="images/alleppeybackwaters.jpg" alt="Alappuzha Backwaters">
+            <h3>🚤 Alappuzha Backwaters</h3>
+            <p>Explore Kerala's famous waterways and traditional houseboats.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="kerala-card"
+            data-name="Kumarakom">
+            <img src="images/kumarakombackwaterskerala.jpg" alt="Kumarakom">
+            <h3>🌴 Kumarakom</h3>
+            <p>A peaceful backwater destination beside Vembanad Lake.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="kerala-card"
+            data-name="Ashtamudi Lake">
+            <img src="images/ashtamudibackwatres.jpg" alt="Ashtamudi Lake">
+            <h3>🌊 Ashtamudi Lake</h3>
+            <p>A beautiful lake and major backwater destination in Kollam.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+    </div>
+
+
+    <!-- HERITAGE -->
+    <h3>🏛️ Heritage Sites</h3>
+
+    <div class="kerala-container">
+
+        <div class="kerala-card"
+            data-name="Palakkad Fort">
+            <img src="images/palakkadfort.jpg" alt="Palakkad fort">
+            <h3>🏛️ Palakkad Fort</h3>
+            <p>Explore historic streets, colonial architecture and cultural landmarks.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="kerala-card"
+          data-name="Bekal Fort">
+            <img src="images/bekalfortkerala.jpg" alt="Bekal Fort">
+            <h3>🏰 Bekal Fort</h3>
+            <p>A historic coastal fort overlooking the Arabian Sea.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="kerala-card"
+        data-name="Edukki caves">
+            <img src="images/edukkicaves.jpg" alt="Edukki caves">
+            <h3>🪨 Edukki caves</h3>
+            <p>Famous for ancient rock carvings and archaeological importance.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+    </div>
+
+
+    <!-- HILL STATIONS -->
+    <h3>⛰️ Hill Stations</h3>
+
+    <div class="kerala-container">
+
+        <div class="goa-card"
+            data-name="Munnar">
+            <img src="images/munnar.jpg" alt="Munnar">
+            <h3>⛰️ Munnar</h3>
+            <p>Famous for tea plantations, misty hills and scenic landscapes.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="kerala-card"
+            data-name="Wayanad">
+            <img src="images/wayanad.jpg" alt="Wayanad">
+            <h3>🌿 Wayanad</h3>
+            <p>A green hill region known for forests, plantations and nature.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="kerala-card"
+            data-name="Vagamon">
+            <img src="images/vagamon.jpg" alt="Vagamon">
+            <h3>🌄 Vagamon</h3>
+            <p>A peaceful hill destination surrounded by green landscapes.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+    </div>
+    </section>
+
+    <section id="karnataka-details" 
+    style="display: none;">
+
+    <h2>🌿 Explore Karnataka</h2>
+
+    <!-- Historic Places -->
+    <h3>🏛️ Historic Places</h3>
+
+    <div class="karnataka-container">
+
+        <div class="karnataka-card"
+            data-name="Hampi">
+            <img src="images/hampi.jpg" alt="Hampi">
+            <h4>Hampi</h4>
+            <p>Explore ancient ruins, temples and the fascinating history of the Vijayanagara Empire.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+        
+</button>
+
+        <div class="karnataka-card"
+            data-name="Mysore Palace">
+            <img src="images/mysorepalace.jpg" alt="Mysore Palace">
+            <h4>Mysore Palace</h4>
+            <p>A magnificent palace known for its royal architecture and rich heritage.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+        
+</button>
+
+        <div class="karnataka-card"
+        data-name="Badami Caves">
+            <img src="images/badamicaves.jpg" alt="Badami Caves">
+            <h4>Badami Caves</h4>
+            <p>Discover impressive rock-cut caves and ancient temple architecture.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+    </div>
+
+
+    <!-- Viewpoints and Hill Stations -->
+    <h3>⛰️ Viewpoints & Hill Stations</h3>
+
+    <div class="karnataka-container">
+
+        <div class="karnataka-card"
+            data-name="Chikmagaluru">
+            <img src="images/chikmagakur.jpg" alt="Chikmagalur">
+            <h4>Chikmagaluru</h4>
+            <p>Enjoy beautiful hills, coffee plantations and peaceful mountain views.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="karnataka-card"
+        data-name="Kudremukha">
+            <img src="images/kudremukha.jpg" alt="Kudremukh">
+            <h4>Kudremukha</h4>
+            <p>A scenic mountain region surrounded by green landscapes and forests.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="karnataka-card"
+        data-name="Nandi Hills">
+            <img src="images/nandihills.jpg" alt="Nandi Hills">
+            <h4>Nandi Hills</h4>
+            <p>A popular viewpoint offering beautiful sunrise and hilltop views.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+    </div>
+
+
+    <!-- Wildlife and Nature Sanctuaries -->
+    <h3>🐘 Wildlife & Nature Sanctuaries</h3>
+
+    <div class="karnataka-container">
+
+        <div class="karnataka-card"
+            data-name="Bandipura National Park">
+            <img src="images/bandipura.jpg" alt="Bandipur National Park">
+            <h4>Bandipura National Park</h4>
+            <p>Explore forests and discover Karnataka's diverse wildlife.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="karnataka-card"
+            data-name="Nagarahole National Park">
+            <img src="images/nagarahole.jpg" alt="Nagarhole National Park">
+            <h4>Nagarahole National Park</h4>
+            <p>A beautiful wildlife destination known for its forests and animals.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+
+        <div class="karnataka-card"
+        data-name="Bhadra Wildlife Sanctuary">
+            <img src="images/bhadra.jpg" alt="Bhadra Wildlife Sanctuary">
+            <h4>Bhadra Wildlife Sanctuary</h4>
+            <p>Enjoy rich forests, wildlife and scenic natural surroundings.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+    ♡ Add to Favourites
+</button>
+        </div>
+    </div>
+    </section>
+
+<!-- TAMIL NADU DETAILS -->
+<section id="tamilnadu-details" 
+style="display: none;">
+
+    <h2>🌺 Explore Tamil Nadu</h2>
+
+    <!-- CATEGORY 1: HILL STATIONS -->
+    <h3>⛰️ Hill Stations</h3>
+
+    <div class="tamilnadu-container">
+
+        <div class="tamilnadu-card"
+         data-name="Ooty">
+            <img src="images/ooty.jpg" alt="Ooty">
+            <h4>Ooty</h4>
+            <p>Discover green hills, tea gardens and beautiful mountain views.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+                ♡ Add to Favourites
+            </button>
+        </div>
+
+        <div class="tamilnadu-card" data-name="Kodaikanal">
+            <img src="images/kodaikanal.jpg" alt="Kodaikanal">
+            <h4>Kodaikanal</h4>
+            <p>Enjoy misty hills, a scenic lake and peaceful surroundings.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+                ♡ Add to Favourites
+            </button>
+        </div>
+
+        <div class="tamilnadu-card" data-name="Yercaud">
+            <img src="images/yelagiri.jpg" alt="Yelagiri">
+            <h4>Yelagiri</h4>
+            <p>Explore coffee plantations and scenic forest viewpoints.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+                ♡ Add to Favourites
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- CATEGORY 2: HISTORICAL & HERITAGE PLACES -->
+    <h3>🛕 Historical & Heritage Places</h3>
+
+    <div class="tamilnadu-container">
+
+        <div class="tamilnadu-card" data-name="Brihadeeswarar Temple">
+            <img src="images/brihadeeswara.jpg" alt="Brihadeeswarar Temple">
+            <h4>Brihadeeswarar Temple</h4>
+            <p>Admire magnificent Chola architecture in Thanjavur.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+                ♡ Add to Favourites
+            </button>
+        </div>
+
+        <div class="tamilnadu-card" data-name="Mahabalipuram">
+            <img src="images/mahabalipuram.jpg" alt="Mahabalipuram">
+            <h4>Mahabalipuram</h4>
+            <p>Discover ancient monuments and impressive stone carvings.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+                ♡ Add to Favourites
+            </button>
+        </div>
+
+        <div class="tamilnadu-card" data-name="Meenakshi Amman Temple">
+            <img src="images/meenakshiamman.jpg" alt="Meenakshi Amman Temple">
+            <h4>Meenakshi Amman Temple</h4>
+            <p>Explore the famous temple architecture of Madurai.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+                ♡ Add to Favourites
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- CATEGORY 3: BEACHES & COASTAL DESTINATIONS -->
+    <h3>🏖️ Beaches & Coastal Destinations</h3>
+
+    <div class="tamilnadu-container">
+
+        <div class="tamilnadu-card" data-name="Marina Beach">
+            <img src="images/marinabeach.jpg" alt="Marina Beach">
+            <h4>Marina Beach</h4>
+            <p>Take a seaside walk along Chennai's famous coastline.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+                ♡ Add to Favourites
+            </button>
+        </div>
+
+        <div class="tamilnadu-card" data-name="Dhanushkodi">
+            <img src="images/dhanushkodi.jpg" alt="Dhanushkodi">
+            <h4>Dhanushkodi</h4>
+            <p>Experience striking coastal scenery and historic ruins.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+                ♡ Add to Favourites
+            </button>
+        </div>
+
+        <div class="tamilnadu-card" data-name="Kanyakumari">
+            <img src="images/mahabalipuram.jpg" alt="Mahabalipuram">
+            <h4>Mahabali[uram</h4>
+            <p>Enjoy coastal views and famous seaside landmarks.</p>
+            <button class="favorite-btn" onclick="addFavourite(this)">
+                ♡ Add to Favourites
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Travel Tips Section -->
+
+
+        <section id="tips">
+
+            <h2>Travel Tips</h2>
+
+            <ul>
+                <li>Plan your budget before travelling.</li>
+                <li>Keep important documents safe.</li>
+                <li>Check the weather before your trip.</li>
+                <li>Support local businesses</li>
+                <li>Avoid unnecessary plastic</li>
+            </ul>
+
         </section>
+
+
+        <section id="contact">
+
+            <h2>Contact Us</h2>
+            <p>
+                Email:
+                <a
+                href="mailto:Travelfriend@gmail.com"
+                class="email-link">
+                
+            </a>
+            </p>
+<p>Have a destination in mind? Let's explore!</p>
+
+
+            
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>Made with ❤️ by BookNest</p>
-        <p>Discover stories. Explore worlds.</p>
-    </footer>
 
+    <footer>
+        <p>© 2026 TRAVEL FRIEND. Explore more, worry less.</p>
+    </footer>
+ 
     <script src="script.js"></script>
+    <section id="favourites">
+    <h2>❤️ My Favourites</h2>
+
+    <div id="favourite-list">
+        
+    </div>
+</section>
 </body>
 </html>
-
-                
-                    
